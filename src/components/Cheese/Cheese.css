@@ -1,0 +1,54 @@
+.cheese__block {
+    width: 300px;
+    height: 382px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+/* .cheese__block:nth-child(3n+1) {
+    margin-left: 0px;
+} */
+
+.cheese__image {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 15px;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.cheese--name {
+    margin-top: -3px;
+    color: #70665b;
+}
+
+.cheese__block a {
+    display: block;
+    width: 100px;
+    margin-top: 4px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #3c2f20;
+    line-height: 25px;
+}
+
+.cheese__block p {
+    font-size: 15px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.dotted {
+    border-bottom: 1px dotted #3c2f20;
+}
+
+.small {
+    font-size: 21px;
+}
+
+.cheese__block a:hover {
+    color: #5b84f0;
+}
+
+.default__image {
+    margin-top: 11px;
+}

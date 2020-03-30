@@ -1,17 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Header from './components/Header/Header';
+import Cheese from './components/Cheese/Cheese';
+import cheese_1 from './assets/cheese_1.png';
+import cheese_2 from './assets/cheese_2.png';
+import cheese_3 from './assets/cheese_3.png';
+import defIMG from './assets/defIMG.png';
+
+class App extends React.Component {
+
+    render() {
+        return (
+            <div className="page">
+                <div className="wrapper">
+                    <Header />
+                    <main>
+                        <Cheese image={cheese_1} defIMG={defIMG}/>
+                        <Cheese image={cheese_2} defIMG={defIMG}/>
+                        <Cheese image={cheese_3} defIMG={defIMG}/>
+                        <Cheese image={cheese_3} defIMG={defIMG}/>
+                        <Cheese image={cheese_1} defIMG={defIMG}/>
+                    </main>
+                </div>
+            </div>
+        )
+    }
+}
+
+
+// ========================================
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <App />,
+    document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
